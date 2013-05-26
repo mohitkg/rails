@@ -13,11 +13,13 @@
 <body>
 	<div class="container">
 		<header>
-			<%= image_tag("hello.png", :alt => "sample App", :class => "round") %>
+			<%= link_to image_tag("hello.png", :alt => "sample App", :class => "round"),
+						"/pages/home"
+			 %>
 			<nav class="round">
 				<ul>
-					<li><%= link_to "Home", '#' %></li>
-					<li><%= link_to "Help", '#' %></li>
+					<li><%= link_to "Home", '/pages/home' %></li>
+					<li><%= link_to "Contact", contact_path %></li>
 					<li><%= link_to "Sign in", '#' %></li>
 				</ul> 
 			</nav>
