@@ -3,11 +3,11 @@
 <head>
   <title>App</title>
   <%= csrf_meta_tags %>
+  <!--<%= render 'layouts/stylesheets' %> -->
   <%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
   <%= stylesheet_link_tag 'blueprint/screen', :media => 'print' %>
  
   <%= stylesheet_link_tag 'custom', :media => 'screen' %>
-
   
 </head>
 <body>
@@ -25,6 +25,7 @@
 		<section class="round">
 			<%= yield %>
 		</section>
+		<%= render 'layouts/footer' %>
 	</div>
- </body>
+	</body>
 </html>
