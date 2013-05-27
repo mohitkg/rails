@@ -1,6 +1,6 @@
 App::Application.routes.draw do
 
-  get "users/new"
+ # get "users/new"
 
  # root :to => "pages/home"
   match '/contact',   :to => "pages#contact"
@@ -10,7 +10,7 @@ App::Application.routes.draw do
 
  # get "pages/contact"
 
- # resources :users
+  resources :users
 
 
   # The priority is based upon order of creation:
